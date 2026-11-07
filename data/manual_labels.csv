@@ -1,0 +1,50 @@
+run,id,question,reference,response,manual_score,notes
+v2_modelA,13,Explain what machine learning is.,learn|data,"- Machine learning is a subset of artificial intelligence that focuses on building systems capable of learning from and making predictions based on data.
+- Algorithms identify patterns and statistical relationships within large datasets to improve their performance on specific tasks over time without explicit programming.
+- Common applications include predictive analytics, natural language processing, image recognition, and recommendation systems used in various industries.",4,
+v2_modelA,27,What is the Pythagorean theorem about?,right triangle|right angled|hypotenuse,"The Pythagorean theorem states that in a right-angled triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides.",5,
+v2_modelA,25,What is a black hole?,gravity,"A black hole is a region of spacetime where gravity is so intense that nothing, not even light, can escape from its interior.",5,
+v1_modelA,5,Which programming language was created by Guido van Rossum?,Python,"```json
+{
+  ""creator"": ""Guido van Rossum"",
+  ""programming_language"": ""Python""
+}
+```",5,
+v2_modelA,4,What is the largest planet in the solar system?,Jupiter,"{""answer"": ""Jupiter"", ""reason"": ""Jupiter has the largest mass and volume of all the planets orbiting the Sun.""}",5,
+v2_modelA,48,How many minutes are there in 3 hours?,180,180,5,
+v1_modelA,33,What is the largest ocean on Earth?,Pacific,The Pacific Ocean is the largest ocean on Earth.,5,
+v2_modelA,14,Explain the benefits of version control such as Git.,Git,"- It enables seamless collaboration by allowing multiple developers to work on the same codebase simultaneously without overwriting each other's changes.
+- It provides a comprehensive history of all modifications, allowing users to track changes, compare versions, and revert to previous states if errors occur.
+- It facilitates branching and merging, which allows teams to experiment with new features in isolated environments before integrating them into the main project.",5,
+v2_modelA,12,Describe the water cycle.,evaporation,"- Solar energy heats water in oceans and lakes, causing it to evaporate into the atmosphere as water vapor.
+- Water vapor cools and condenses into clouds, eventually falling back to the Earth's surface as precipitation like rain or snow.
+- Water collects in bodies of water or infiltrates the ground, where it flows back toward oceans to restart the cycle.",3,
+v2_modelA,42,How many continents are there?,7,7,5,
+v1_modelA,11,Explain why the sky appears blue.,Rayleigh|scattering,"The sky appears blue due to a phenomenon known as **Rayleigh scattering**. Here is the step-by-step explanation of how it works:
+
+*   **Sunlight is a mixture of colors:** Although sunlight looks white to us, it is actually composed of all the colors of the visible spectrum (red, orange, yellow, green, blue, indigo, and violet). Each color travels as a wave with a different wavelength.
+*   **The atmosphere acts as a filter:** Earth’s atmosphere is filled with gases (mostly nitrogen and oxygen) and tiny particles. As sunlight reaches the atmosphere, it collides with these gas molecules.
+*   **Shorter wavelengths scatter more:** Light travels in waves, and different colors have different wavelengths. Red light has long, lazy wavelengths, while blue and violet light have much shorter, choppier wavelengths. Because blue light travels in shorter, smaller waves, it strikes the gas molecules in the atmosphere and gets scattered in every direction much more easily than the other colors.
+*   **Our eyes perceive the scattered light:** When you look up at the sky during the day, your eyes are detecting this scattered blue light coming from every part of the atmosphere.
+*   **Why not violet?** You might wonder why the sky isn't violet, since violet light has an even shorter wavelength than blue light and scatters even more. The sky isn't violet for two reasons:
+    *",3,
+v1_modelA,23,What is inflation?,prices|price,"Inflation is the rate at which the general level of prices for goods and services rises over time. As inflation increases, each unit of currency buys fewer goods and services than it did before, effectively reducing your **purchasing power**.",4,
+v1_modelA,15,Explain what an API is.,interface,"An **API** stands for **Application Programming Interface**. At its simplest, it is a set of rules that allows two different software programs to talk to each other.
+
+Here is a breakdown of what an API is and how it works:
+
+*   **The ""Waiter"" Analogy:** Think of a restaurant. You (the user) are at the table, and the kitchen (the system/server) is where your food is prepared. The **API is the waiter** who takes your order (request), delivers it to the kitchen, and brings the food (response) back to you. You don’t need to know how the kitchen works; you just need to know how to place an order.
+*   **Standardized Communication:** APIs provide a common language. They ensure that when one app asks for data, the other app understands exactly what is being requested and how to provide it, regardless of the programming language or operating system being used.
+*   **Abstraction (Hiding Complexity):** You don’t need to understand the complex code behind a service to use it. For example, when you use a ""Log in with Google"" button, the API handles the security and verification in the background so the website you are visiting doesn't have to build its own login system.
+*   **Data Exchange:** APIs are the primary way apps share data. For example, a weather app on your phone doesn't have its own satellites",5,
+v2_modelA,10,What is the currency of Japan?,yen,"{""answer"": ""Japanese yen"", ""reason"": ""The Japanese yen is the official currency of Japan, denoted by the symbol ¥ and the code JPY.""}",5,
+v1_modelA,35,What is the square root of 144?,12,The square root of 144 is 12.,5,
+v1_modelA,30,What is the boiling point of water at sea level in Celsius?,100,The boiling point of water at sea level is 100°C.,5,
+v2_modelA,18,Explain what caused the French Revolution.,tax|taxes,"- Widespread economic hardship caused by poor harvests, heavy taxation, and the crown's massive debt from foreign wars.
+- Resentment toward the rigid social hierarchy of the Ancien Régime, which granted exclusive privileges to the clergy and nobility while burdening the commoners.
+- The spread of Enlightenment ideals that challenged absolute monarchy and promoted concepts of equality, liberty, and popular sovereignty.",4,
+v2_modelA,20,Explain how binary search works.,half|middle|divide,"- Compare the target value to the middle element of a sorted array.
+- If the target is smaller, repeat the search on the left half; if larger, repeat on the right half.
+- Continue narrowing the search range by half until the target is found or the range is empty.",3,
+v1_modelA,29,Who developed the theory of general relativity?,Einstein,Albert Einstein developed the theory of general relativity.,5,
+v1_modelA,40,What is the freezing point of water in Fahrenheit?,32,The freezing point of water is 32°F.,5,

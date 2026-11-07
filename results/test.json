@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "name": "test",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v1",
+    "judge_model": "gemini-3.5-flash-lite",
+    "n_prompts": 5,
+    "timestamp": "2026-11-06T21:59:44"
+  },
+  "records": [
+    {
+      "id": 1,
+      "question": "What is the capital of Australia?",
+      "reference": "Canberra",
+      "format_spec": {
+        "type": "json",
+        "keys": [
+          "answer",
+          "reason"
+        ]
+      },
+      "prompt_messages": [
+        {
+          "role": "user",
+          "content": "What is the capital of Australia? Answer in JSON."
+        }
+      ],
+      "response": "```json\n{\n  \"capital\": \"Canberra\"\n}\n```",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "Canberra"
+      },
+      "format": {
+        "score": 0.0,
+        "passed": false,
+        "reason": "schema fail: 'answer' is a required property"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer correctly identifies Canberra as the capital of Australia."
+      }
+    },
+    {
+      "id": 2,
+      "question": "What is the chemical symbol for gold?",
+      "reference": "Au",
+      "format_spec": {
+        "type": "json",
+        "keys": [
+          "answer",
+          "reason"
+        ]
+      },
+      "prompt_messages": [
+        {
+          "role": "user",
+          "content": "What is the chemical symbol for gold? Answer in JSON."
+        }
+      ],
+      "response": "```json\n{\n  \"element\": \"gold\",\n  \"symbol\": \"Au\"\n}\n```",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "Au"
+      },
+      "format": {
+        "score": 0.0,
+        "passed": false,
+        "reason": "schema fail: 'answer' is a required property"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer correctly provides the chemical symbol for gold."
+      }
+    },
+    {
+      "id": 3,
+      "question": "Who wrote the novel 1984?",
+      "reference": "George Orwell|Orwell",
+      "format_spec": {
+        "type": "json",
+        "keys": [
+          "answer",
+          "reason"
+        ]
+      },
+      "prompt_messages": [
+        {
+          "role": "user",
+          "content": "Who wrote the novel 1984? Answer in JSON."
+        }
+      ],
+      "response": "```json\n{\n  \"author\": \"George Orwell\"\n}\n```",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "George Orwell"
+      },
+      "format": {
+        "score": 0.0,
+        "passed": false,
+        "reason": "schema fail: 'answer' is a required property"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer correctly identifies George Orwell as the author of 1984."
+      }
+    },
+    {
+      "id": 4,
+      "question": "What is the largest planet in the solar system?",
+      "reference": "Jupiter",
+      "format_spec": {
+        "type": "json",
+        "keys": [
+          "answer",
+          "reason"
+        ]
+      },
+      "prompt_messages": [
+        {
+          "role": "user",
+          "content": "What is the largest planet in the solar system? Answer in JSON."
+        }
+      ],
+      "response": "```json\n{\n  \"largest_planet\": \"Jupiter\"\n}\n```",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "Jupiter"
+      },
+      "format": {
+        "score": 0.0,
+        "passed": false,
+        "reason": "schema fail: 'answer' is a required property"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer correctly identifies Jupiter as the largest planet."
+      }
+    },
+    {
+      "id": 5,
+      "question": "Which programming language was created by Guido van Rossum?",
+      "reference": "Python",
+      "format_spec": {
+        "type": "json",
+        "keys": [
+          "answer",
+          "reason"
+        ]
+      },
+      "prompt_messages": [
+        {
+          "role": "user",
+          "content": "Which programming language was created by Guido van Rossum? Answer in JSON."
+        }
+      ],
+      "response": "```json\n{\n  \"creator\": \"Guido van Rossum\",\n  \"programming_language\": \"Python\"\n}\n```",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "Python"
+      },
+      "format": {
+        "score": 0.0,
+        "passed": false,
+        "reason": "schema fail: 'answer' is a required property"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer correctly identifies Python as the programming language created by Guido van Rossum."
+      }
+    }
+  ]
+}

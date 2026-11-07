@@ -1,0 +1,1872 @@
+{
+  "meta": {
+    "name": "v2_modelA",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_version": "v2",
+    "judge_model": "gemini-3.5-flash-lite",
+    "n_prompts": 50,
+    "timestamp": "2026-11-06T22:20:15"
+  },
+  "records": [
+    {
+      "id": 1,
+      "question": "What is the capital of Australia?",
+      "reference": "Canberra",
+      "format_spec": {
+        "type": "json",
+        "keys": [
+          "answer",
+          "reason"
+        ]
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "What is the capital of Australia?\n\nRespond ONLY with a valid JSON object with exactly the keys \"answer\" and \"reason\". No markdown, no code fences, no text outside the JSON."
+        }
+      ],
+      "response": "{\"answer\": \"Canberra\", \"reason\": \"Canberra was selected as the capital of Australia in 1908 as a compromise between rivals Sydney and Melbourne.\"}",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "Canberra"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer correctly identifies Canberra as the capital of Australia."
+      }
+    },
+    {
+      "id": 2,
+      "question": "What is the chemical symbol for gold?",
+      "reference": "Au",
+      "format_spec": {
+        "type": "json",
+        "keys": [
+          "answer",
+          "reason"
+        ]
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "What is the chemical symbol for gold?\n\nRespond ONLY with a valid JSON object with exactly the keys \"answer\" and \"reason\". No markdown, no code fences, no text outside the JSON."
+        }
+      ],
+      "response": "{\"answer\": \"Au\", \"reason\": \"The symbol Au is derived from the Latin word for gold, aurum.\"}",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "Au"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer correctly provides the chemical symbol for gold."
+      }
+    },
+    {
+      "id": 3,
+      "question": "Who wrote the novel 1984?",
+      "reference": "George Orwell|Orwell",
+      "format_spec": {
+        "type": "json",
+        "keys": [
+          "answer",
+          "reason"
+        ]
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "Who wrote the novel 1984?\n\nRespond ONLY with a valid JSON object with exactly the keys \"answer\" and \"reason\". No markdown, no code fences, no text outside the JSON."
+        }
+      ],
+      "response": "{\"answer\": \"George Orwell\", \"reason\": \"George Orwell is the pen name of Eric Arthur Blair, who authored the dystopian novel 1984, published in 1949.\"}",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "George Orwell"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer correctly identifies George Orwell as the author of 1984."
+      }
+    },
+    {
+      "id": 4,
+      "question": "What is the largest planet in the solar system?",
+      "reference": "Jupiter",
+      "format_spec": {
+        "type": "json",
+        "keys": [
+          "answer",
+          "reason"
+        ]
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "What is the largest planet in the solar system?\n\nRespond ONLY with a valid JSON object with exactly the keys \"answer\" and \"reason\". No markdown, no code fences, no text outside the JSON."
+        }
+      ],
+      "response": "{\"answer\": \"Jupiter\", \"reason\": \"Jupiter has the largest mass and volume of all the planets orbiting the Sun.\"}",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "Jupiter"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer correctly identifies Jupiter as the largest planet."
+      }
+    },
+    {
+      "id": 5,
+      "question": "Which programming language was created by Guido van Rossum?",
+      "reference": "Python",
+      "format_spec": {
+        "type": "json",
+        "keys": [
+          "answer",
+          "reason"
+        ]
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "Which programming language was created by Guido van Rossum?\n\nRespond ONLY with a valid JSON object with exactly the keys \"answer\" and \"reason\". No markdown, no code fences, no text outside the JSON."
+        }
+      ],
+      "response": "{\"answer\": \"Python\", \"reason\": \"Guido van Rossum created Python in the late 1980s while working at CWI.\"}",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "Python"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer correctly identifies Python as the programming language created by Guido van Rossum."
+      }
+    },
+    {
+      "id": 6,
+      "question": "What does HTTP stand for?",
+      "reference": "HyperText Transfer Protocol",
+      "format_spec": {
+        "type": "json",
+        "keys": [
+          "answer",
+          "reason"
+        ]
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "What does HTTP stand for?\n\nRespond ONLY with a valid JSON object with exactly the keys \"answer\" and \"reason\". No markdown, no code fences, no text outside the JSON."
+        }
+      ],
+      "response": "{\"answer\": \"Hypertext Transfer Protocol\", \"reason\": \"HTTP is the standard application-level protocol used for transmitting hypermedia documents on the World Wide Web.\"}",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "HyperText Transfer Protocol"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer correctly identifies what HTTP stands for."
+      }
+    },
+    {
+      "id": 7,
+      "question": "Which gas do plants absorb for photosynthesis?",
+      "reference": "carbon dioxide|CO2",
+      "format_spec": {
+        "type": "json",
+        "keys": [
+          "answer",
+          "reason"
+        ]
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "Which gas do plants absorb for photosynthesis?\n\nRespond ONLY with a valid JSON object with exactly the keys \"answer\" and \"reason\". No markdown, no code fences, no text outside the JSON."
+        }
+      ],
+      "response": "{\"answer\": \"carbon dioxide\", \"reason\": \"Plants use carbon dioxide from the atmosphere as a primary reactant in the process of photosynthesis to produce glucose.\"}",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "carbon dioxide"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer correctly identifies carbon dioxide as the gas absorbed by plants for photosynthesis."
+      }
+    },
+    {
+      "id": 8,
+      "question": "In which year did World War II end?",
+      "reference": "1945",
+      "format_spec": {
+        "type": "json",
+        "keys": [
+          "answer",
+          "reason"
+        ]
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "In which year did World War II end?\n\nRespond ONLY with a valid JSON object with exactly the keys \"answer\" and \"reason\". No markdown, no code fences, no text outside the JSON."
+        }
+      ],
+      "response": "{\"answer\": 1945, \"reason\": \"World War II officially ended on September 2, 1945, following the formal surrender of Japan.\"}",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "1945"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer correctly identifies the year World War II ended."
+      }
+    },
+    {
+      "id": 9,
+      "question": "Which organ pumps blood through the human body?",
+      "reference": "heart",
+      "format_spec": {
+        "type": "json",
+        "keys": [
+          "answer",
+          "reason"
+        ]
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "Which organ pumps blood through the human body?\n\nRespond ONLY with a valid JSON object with exactly the keys \"answer\" and \"reason\". No markdown, no code fences, no text outside the JSON."
+        }
+      ],
+      "response": "{\"answer\": \"The heart\", \"reason\": \"The heart is a muscular organ that functions as a pump to circulate blood throughout the circulatory system.\"}",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "heart"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer correctly and clearly identifies the heart as the organ that pumps blood."
+      }
+    },
+    {
+      "id": 10,
+      "question": "What is the currency of Japan?",
+      "reference": "yen",
+      "format_spec": {
+        "type": "json",
+        "keys": [
+          "answer",
+          "reason"
+        ]
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "What is the currency of Japan?\n\nRespond ONLY with a valid JSON object with exactly the keys \"answer\" and \"reason\". No markdown, no code fences, no text outside the JSON."
+        }
+      ],
+      "response": "{\"answer\": \"Japanese yen\", \"reason\": \"The Japanese yen is the official currency of Japan, denoted by the symbol ¥ and the code JPY.\"}",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "yen"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer correctly and clearly identifies the currency of Japan."
+      }
+    },
+    {
+      "id": 11,
+      "question": "Explain why the sky appears blue.",
+      "reference": "Rayleigh|scattering",
+      "format_spec": {
+        "type": "bullets",
+        "count": 3
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "Explain why the sky appears blue.\n\nRespond with exactly 3 bullet points, each starting with '- '. No introduction and no conclusion."
+        }
+      ],
+      "response": "- Sunlight reaches Earth's atmosphere and is scattered in all directions by the gases and particles in the air.\n- Blue light travels in shorter, smaller waves and is scattered more strongly than other colors by atmospheric molecules.\n- This phenomenon, known as Rayleigh scattering, causes our eyes to perceive the scattered blue light coming from all parts of the sky.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "Rayleigh"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer provides a clear, detailed, and accurate explanation of Rayleigh scattering and why the sky is blue."
+      }
+    },
+    {
+      "id": 12,
+      "question": "Describe the water cycle.",
+      "reference": "evaporation",
+      "format_spec": {
+        "type": "bullets",
+        "count": 3
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "Describe the water cycle.\n\nRespond with exactly 3 bullet points, each starting with '- '. No introduction and no conclusion."
+        }
+      ],
+      "response": "- Solar energy heats water in oceans and lakes, causing it to evaporate into the atmosphere as water vapor.\n- Water vapor cools and condenses into clouds, eventually falling back to the Earth's surface as precipitation like rain or snow.\n- Water collects in bodies of water or infiltrates the ground, where it flows back toward oceans to restart the cycle.",
+      "factual": {
+        "score": 0.818,
+        "passed": false,
+        "matched": null
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer provides a complete and accurate description of the water cycle."
+      }
+    },
+    {
+      "id": 13,
+      "question": "Explain what machine learning is.",
+      "reference": "learn|data",
+      "format_spec": {
+        "type": "bullets",
+        "count": 3
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "Explain what machine learning is.\n\nRespond with exactly 3 bullet points, each starting with '- '. No introduction and no conclusion."
+        }
+      ],
+      "response": "- Machine learning is a subset of artificial intelligence that focuses on building systems capable of learning from and making predictions based on data.\n- Algorithms identify patterns and statistical relationships within large datasets to improve their performance on specific tasks over time without explicit programming.\n- Common applications include predictive analytics, natural language processing, image recognition, and recommendation systems used in various industries.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "data"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer provides a clear, accurate, and comprehensive explanation of machine learning that easily covers the reference concepts."
+      }
+    },
+    {
+      "id": 14,
+      "question": "Explain the benefits of version control such as Git.",
+      "reference": "Git",
+      "format_spec": {
+        "type": "bullets",
+        "count": 3
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "Explain the benefits of version control such as Git.\n\nRespond with exactly 3 bullet points, each starting with '- '. No introduction and no conclusion."
+        }
+      ],
+      "response": "- It enables seamless collaboration by allowing multiple developers to work on the same codebase simultaneously without overwriting each other's changes.\n- It provides a comprehensive history of all modifications, allowing users to track changes, compare versions, and revert to previous states if errors occur.\n- It facilitates branching and merging, which allows teams to experiment with new features in isolated environments before integrating them into the main project.",
+      "factual": {
+        "score": 0.0,
+        "passed": false,
+        "matched": null
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer accurately and clearly explains the key benefits of version control like Git."
+      }
+    },
+    {
+      "id": 15,
+      "question": "Explain what an API is.",
+      "reference": "interface",
+      "format_spec": {
+        "type": "bullets",
+        "count": 3
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "Explain what an API is.\n\nRespond with exactly 3 bullet points, each starting with '- '. No introduction and no conclusion."
+        }
+      ],
+      "response": "- An API, or Application Programming Interface, is a set of rules that allows different software applications to communicate and exchange data with each other.\n- It acts as an intermediary layer that processes requests, enabling a client to access the functionality or data of a server without needing to understand its internal code.\n- Developers use APIs to integrate third-party services, such as payment gateways or mapping tools, into their own applications to enhance features and efficiency.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "interface"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer provides a clear, accurate, and comprehensive explanation of an API."
+      }
+    },
+    {
+      "id": 16,
+      "question": "Describe how vaccines work.",
+      "reference": "immune",
+      "format_spec": {
+        "type": "bullets",
+        "count": 3
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "Describe how vaccines work.\n\nRespond with exactly 3 bullet points, each starting with '- '. No introduction and no conclusion."
+        }
+      ],
+      "response": "- Vaccines introduce harmless fragments or weakened versions of a pathogen into the body to trigger an immune response.\n- The immune system recognizes these antigens and produces specific antibodies and memory cells to fight the perceived infection.\n- If the body encounters the actual pathogen in the future, the memory cells recognize it and mount a rapid, effective defense to prevent disease.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "immune"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer provides a clear, accurate, and comprehensive description of how vaccines work."
+      }
+    },
+    {
+      "id": 17,
+      "question": "Explain why regular exercise is healthy.",
+      "reference": "heart|cardiovascular",
+      "format_spec": {
+        "type": "bullets",
+        "count": 3
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "Explain why regular exercise is healthy.\n\nRespond with exactly 3 bullet points, each starting with '- '. No introduction and no conclusion."
+        }
+      ],
+      "response": "- It strengthens the cardiovascular system, improving heart health and circulation.\n- It helps regulate body weight by increasing metabolic rate and burning calories.\n- It enhances mental well-being by releasing endorphins that reduce stress and anxiety.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "heart"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer provides accurate, relevant, and clear reasons why regular exercise is healthy, successfully encompassing the reference point."
+      }
+    },
+    {
+      "id": 18,
+      "question": "Explain what caused the French Revolution.",
+      "reference": "tax|taxes",
+      "format_spec": {
+        "type": "bullets",
+        "count": 3
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "Explain what caused the French Revolution.\n\nRespond with exactly 3 bullet points, each starting with '- '. No introduction and no conclusion."
+        }
+      ],
+      "response": "- Widespread economic hardship caused by poor harvests, heavy taxation, and the crown's massive debt from foreign wars.\n- Resentment toward the rigid social hierarchy of the Ancien Régime, which granted exclusive privileges to the clergy and nobility while burdening the commoners.\n- The spread of Enlightenment ideals that challenged absolute monarchy and promoted concepts of equality, liberty, and popular sovereignty.",
+      "factual": {
+        "score": 0.6,
+        "passed": false,
+        "matched": null
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer provides a comprehensive and accurate explanation of the causes of the French Revolution."
+      }
+    },
+    {
+      "id": 19,
+      "question": "Explain what photosynthesis produces.",
+      "reference": "oxygen|glucose",
+      "format_spec": {
+        "type": "bullets",
+        "count": 3
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "Explain what photosynthesis produces.\n\nRespond with exactly 3 bullet points, each starting with '- '. No introduction and no conclusion."
+        }
+      ],
+      "response": "- Glucose, which serves as the primary energy source for the plant.\n- Oxygen, which is released into the atmosphere as a byproduct.\n- Chemical energy stored in the form of carbohydrates.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "oxygen"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer accurately identifies the products of photosynthesis as glucose and oxygen."
+      }
+    },
+    {
+      "id": 20,
+      "question": "Explain how binary search works.",
+      "reference": "half|middle|divide",
+      "format_spec": {
+        "type": "bullets",
+        "count": 3
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "Explain how binary search works.\n\nRespond with exactly 3 bullet points, each starting with '- '. No introduction and no conclusion."
+        }
+      ],
+      "response": "- Compare the target value to the middle element of a sorted array.\n- If the target is smaller, repeat the search on the left half; if larger, repeat on the right half.\n- Continue narrowing the search range by half until the target is found or the range is empty.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "half"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer accurately and clearly explains how binary search works."
+      }
+    },
+    {
+      "id": 21,
+      "question": "What causes ocean tides?",
+      "reference": "moon|gravity",
+      "format_spec": {
+        "type": "one_sentence"
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "What causes ocean tides?\n\nRespond in exactly one sentence."
+        }
+      ],
+      "response": "Ocean tides are primarily caused by the gravitational pull of the moon and the sun acting upon Earth's oceans, combined with the rotation of the planet.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "moon"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer accurately and comprehensively explains the causes of ocean tides."
+      }
+    },
+    {
+      "id": 22,
+      "question": "What is DNS used for?",
+      "reference": "domain|IP address|IP",
+      "format_spec": {
+        "type": "one_sentence"
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "What is DNS used for?\n\nRespond in exactly one sentence."
+        }
+      ],
+      "response": "DNS is used to translate human-readable domain names into numerical IP addresses that computers use to identify and locate each other on the internet.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "domain"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer accurately and clearly explains the purpose of DNS."
+      }
+    },
+    {
+      "id": 23,
+      "question": "What is inflation?",
+      "reference": "prices|price",
+      "format_spec": {
+        "type": "one_sentence"
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "What is inflation?\n\nRespond in exactly one sentence."
+        }
+      ],
+      "response": "Inflation is the rate at which the general level of prices for goods and services rises, subsequently eroding the purchasing power of currency.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "prices"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer provides a clear, accurate, and comprehensive definition of inflation that encompasses the reference concept of rising prices."
+      }
+    },
+    {
+      "id": 24,
+      "question": "Why is the ocean salty?",
+      "reference": "rivers|rocks|minerals",
+      "format_spec": {
+        "type": "one_sentence"
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "Why is the ocean salty?\n\nRespond in exactly one sentence."
+        }
+      ],
+      "response": "The ocean is salty because rain erodes minerals from rocks on land, which are then carried by rivers into the sea, where water evaporates and leaves the dissolved salts behind.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "rivers"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer provides a clear, accurate, and comprehensive explanation that covers all the reference points."
+      }
+    },
+    {
+      "id": 25,
+      "question": "What is a black hole?",
+      "reference": "gravity",
+      "format_spec": {
+        "type": "one_sentence"
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "What is a black hole?\n\nRespond in exactly one sentence."
+        }
+      ],
+      "response": "A black hole is a region of spacetime where gravity is so intense that nothing, not even light, can escape from its interior.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "gravity"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer provides an accurate, clear, and comprehensive definition of a black hole."
+      }
+    },
+    {
+      "id": 26,
+      "question": "What does a CPU do?",
+      "reference": "instructions|processing|execute",
+      "format_spec": {
+        "type": "one_sentence"
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "What does a CPU do?\n\nRespond in exactly one sentence."
+        }
+      ],
+      "response": "A CPU processes instructions by performing basic arithmetic, logical, control, and input/output operations specified by computer programs.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "instructions"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer accurately and comprehensively describes the function of a CPU."
+      }
+    },
+    {
+      "id": 27,
+      "question": "What is the Pythagorean theorem about?",
+      "reference": "right triangle|right angled|hypotenuse",
+      "format_spec": {
+        "type": "one_sentence"
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "What is the Pythagorean theorem about?\n\nRespond in exactly one sentence."
+        }
+      ],
+      "response": "The Pythagorean theorem states that in a right-angled triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "right angled"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer provides a complete and accurate explanation of the Pythagorean theorem."
+      }
+    },
+    {
+      "id": 28,
+      "question": "What is overfitting in machine learning?",
+      "reference": "training data|noise",
+      "format_spec": {
+        "type": "one_sentence"
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "What is overfitting in machine learning?\n\nRespond in exactly one sentence."
+        }
+      ],
+      "response": "Overfitting occurs when a machine learning model learns the training data too closely, capturing noise and specific details that prevent it from generalizing accurately to new, unseen data.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "training data"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer accurately and clearly defines overfitting in machine learning."
+      }
+    },
+    {
+      "id": 29,
+      "question": "Who developed the theory of general relativity?",
+      "reference": "Einstein",
+      "format_spec": {
+        "type": "one_sentence"
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "Who developed the theory of general relativity?\n\nRespond in exactly one sentence."
+        }
+      ],
+      "response": "Albert Einstein developed the theory of general relativity.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "Einstein"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer is fully correct, relevant, and clear."
+      }
+    },
+    {
+      "id": 30,
+      "question": "What is the boiling point of water at sea level in Celsius?",
+      "reference": "100",
+      "format_spec": {
+        "type": "one_sentence"
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "What is the boiling point of water at sea level in Celsius?\n\nRespond in exactly one sentence."
+        }
+      ],
+      "response": "The boiling point of water at sea level is 100 degrees Celsius.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "100"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer correctly states the boiling point of water in Celsius."
+      }
+    },
+    {
+      "id": 31,
+      "question": "Who painted the Mona Lisa?",
+      "reference": "Leonardo|da Vinci",
+      "format_spec": {
+        "type": "max_words",
+        "limit": 20
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "Who painted the Mona Lisa?\n\nRespond in at most 20 words."
+        }
+      ],
+      "response": "Leonardo da Vinci painted the Mona Lisa.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "Leonardo"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer is completely correct, direct, and clear."
+      }
+    },
+    {
+      "id": 32,
+      "question": "What is the capital of Canada?",
+      "reference": "Ottawa",
+      "format_spec": {
+        "type": "max_words",
+        "limit": 20
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "What is the capital of Canada?\n\nRespond in at most 20 words."
+        }
+      ],
+      "response": "The capital of Canada is Ottawa.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "Ottawa"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer accurately and concisely provides the correct capital of Canada."
+      }
+    },
+    {
+      "id": 33,
+      "question": "What is the largest ocean on Earth?",
+      "reference": "Pacific",
+      "format_spec": {
+        "type": "max_words",
+        "limit": 20
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "What is the largest ocean on Earth?\n\nRespond in at most 20 words."
+        }
+      ],
+      "response": "The Pacific Ocean is the largest ocean on Earth.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "Pacific"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer is completely correct, relevant, and clear."
+      }
+    },
+    {
+      "id": 34,
+      "question": "Who discovered penicillin?",
+      "reference": "Fleming",
+      "format_spec": {
+        "type": "max_words",
+        "limit": 20
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "Who discovered penicillin?\n\nRespond in at most 20 words."
+        }
+      ],
+      "response": "Alexander Fleming discovered penicillin in 1928.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "Fleming"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer correctly identifies Fleming and provides accurate, concise additional context."
+      }
+    },
+    {
+      "id": 35,
+      "question": "What is the square root of 144?",
+      "reference": "12",
+      "format_spec": {
+        "type": "max_words",
+        "limit": 20
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "What is the square root of 144?\n\nRespond in at most 20 words."
+        }
+      ],
+      "response": "The square root of 144 is 12.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "12"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer is completely correct, relevant, and clear."
+      }
+    },
+    {
+      "id": 36,
+      "question": "Which planet is known as the Red Planet?",
+      "reference": "Mars",
+      "format_spec": {
+        "type": "max_words",
+        "limit": 20
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "Which planet is known as the Red Planet?\n\nRespond in at most 20 words."
+        }
+      ],
+      "response": "Mars is known as the Red Planet.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "Mars"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer correctly and clearly identifies Mars as the Red Planet."
+      }
+    },
+    {
+      "id": 37,
+      "question": "What is the chemical formula of table salt?",
+      "reference": "NaCl",
+      "format_spec": {
+        "type": "max_words",
+        "limit": 20
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "What is the chemical formula of table salt?\n\nRespond in at most 20 words."
+        }
+      ],
+      "response": "The chemical formula of table salt is NaCl.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "NaCl"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer is completely correct, relevant, and clear."
+      }
+    },
+    {
+      "id": 38,
+      "question": "Who was the first person to walk on the Moon?",
+      "reference": "Armstrong",
+      "format_spec": {
+        "type": "max_words",
+        "limit": 20
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "Who was the first person to walk on the Moon?\n\nRespond in at most 20 words."
+        }
+      ],
+      "response": "Neil Armstrong was the first person to walk on the Moon.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "Armstrong"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer correctly identifies Neil Armstrong as the first person to walk on the moon."
+      }
+    },
+    {
+      "id": 39,
+      "question": "What is the longest river in Africa?",
+      "reference": "Nile",
+      "format_spec": {
+        "type": "max_words",
+        "limit": 20
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "What is the longest river in Africa?\n\nRespond in at most 20 words."
+        }
+      ],
+      "response": "The Nile is the longest river in Africa.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "Nile"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer is completely correct, relevant, and clear."
+      }
+    },
+    {
+      "id": 40,
+      "question": "What is the freezing point of water in Fahrenheit?",
+      "reference": "32",
+      "format_spec": {
+        "type": "max_words",
+        "limit": 20
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "What is the freezing point of water in Fahrenheit?\n\nRespond in at most 20 words."
+        }
+      ],
+      "response": "The freezing point of water is 32 degrees Fahrenheit.",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "32"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer is completely correct, relevant, and clear."
+      }
+    },
+    {
+      "id": 41,
+      "question": "What is 15 multiplied by 12?",
+      "reference": "180",
+      "format_spec": {
+        "type": "number_only"
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "What is 15 multiplied by 12?\n\nRespond with only the number: no words, no units, no punctuation."
+        }
+      ],
+      "response": "180",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "180"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer is correct, direct, and clear."
+      }
+    },
+    {
+      "id": 42,
+      "question": "How many continents are there?",
+      "reference": "7",
+      "format_spec": {
+        "type": "number_only"
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "How many continents are there?\n\nRespond with only the number: no words, no units, no punctuation."
+        }
+      ],
+      "response": "7",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "7"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer is completely correct, relevant, and clear."
+      }
+    },
+    {
+      "id": 43,
+      "question": "How many days are there in a leap year?",
+      "reference": "366",
+      "format_spec": {
+        "type": "number_only"
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "How many days are there in a leap year?\n\nRespond with only the number: no words, no units, no punctuation."
+        }
+      ],
+      "response": "366",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "366"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer is completely correct, relevant, and clear."
+      }
+    },
+    {
+      "id": 44,
+      "question": "What is 144 divided by 12?",
+      "reference": "12",
+      "format_spec": {
+        "type": "number_only"
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "What is 144 divided by 12?\n\nRespond with only the number: no words, no units, no punctuation."
+        }
+      ],
+      "response": "12",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "12"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer is completely correct, relevant, and clear."
+      }
+    },
+    {
+      "id": 45,
+      "question": "How many sides does a hexagon have?",
+      "reference": "6",
+      "format_spec": {
+        "type": "number_only"
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "How many sides does a hexagon have?\n\nRespond with only the number: no words, no units, no punctuation."
+        }
+      ],
+      "response": "6",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "6"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer is completely correct, relevant, and clear."
+      }
+    },
+    {
+      "id": 46,
+      "question": "How many bits are in a byte?",
+      "reference": "8",
+      "format_spec": {
+        "type": "number_only"
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "How many bits are in a byte?\n\nRespond with only the number: no words, no units, no punctuation."
+        }
+      ],
+      "response": "8",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "8"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer is completely correct, concise, and directly answers the question."
+      }
+    },
+    {
+      "id": 47,
+      "question": "What is 2 to the power of 10?",
+      "reference": "1024",
+      "format_spec": {
+        "type": "number_only"
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "What is 2 to the power of 10?\n\nRespond with only the number: no words, no units, no punctuation."
+        }
+      ],
+      "response": "1024",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "1024"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer is completely correct, relevant, and clear."
+      }
+    },
+    {
+      "id": 48,
+      "question": "How many minutes are there in 3 hours?",
+      "reference": "180",
+      "format_spec": {
+        "type": "number_only"
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "How many minutes are there in 3 hours?\n\nRespond with only the number: no words, no units, no punctuation."
+        }
+      ],
+      "response": "180",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "180"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer is completely correct and directly addresses the question."
+      }
+    },
+    {
+      "id": 49,
+      "question": "What is the atomic number of carbon?",
+      "reference": "6",
+      "format_spec": {
+        "type": "number_only"
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "What is the atomic number of carbon?\n\nRespond with only the number: no words, no units, no punctuation."
+        }
+      ],
+      "response": "6",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "6"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer is completely correct, relevant, and clear."
+      }
+    },
+    {
+      "id": 50,
+      "question": "How many players does one soccer team have on the field?",
+      "reference": "11",
+      "format_spec": {
+        "type": "number_only"
+      },
+      "prompt_messages": [
+        {
+          "role": "system",
+          "content": "You are a precise assistant. Answer factually and follow the requested output format exactly. Never add extra text."
+        },
+        {
+          "role": "user",
+          "content": "How many players does one soccer team have on the field?\n\nRespond with only the number: no words, no units, no punctuation."
+        }
+      ],
+      "response": "11",
+      "factual": {
+        "score": 1.0,
+        "passed": true,
+        "matched": "11"
+      },
+      "format": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "ok"
+      },
+      "judge": {
+        "correctness": 5,
+        "relevance": 5,
+        "clarity": 5,
+        "overall": 5,
+        "reason": "The answer is completely correct, relevant, and clear."
+      }
+    }
+  ]
+}

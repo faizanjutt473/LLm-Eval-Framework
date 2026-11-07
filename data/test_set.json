@@ -1,0 +1,462 @@
+[
+  {
+    "id": 1,
+    "question": "What is the capital of Australia?",
+    "reference": "Canberra",
+    "format": {
+      "type": "json",
+      "keys": [
+        "answer",
+        "reason"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "question": "What is the chemical symbol for gold?",
+    "reference": "Au",
+    "format": {
+      "type": "json",
+      "keys": [
+        "answer",
+        "reason"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "question": "Who wrote the novel 1984?",
+    "reference": "George Orwell|Orwell",
+    "format": {
+      "type": "json",
+      "keys": [
+        "answer",
+        "reason"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "question": "What is the largest planet in the solar system?",
+    "reference": "Jupiter",
+    "format": {
+      "type": "json",
+      "keys": [
+        "answer",
+        "reason"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "question": "Which programming language was created by Guido van Rossum?",
+    "reference": "Python",
+    "format": {
+      "type": "json",
+      "keys": [
+        "answer",
+        "reason"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "question": "What does HTTP stand for?",
+    "reference": "HyperText Transfer Protocol",
+    "format": {
+      "type": "json",
+      "keys": [
+        "answer",
+        "reason"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "question": "Which gas do plants absorb for photosynthesis?",
+    "reference": "carbon dioxide|CO2",
+    "format": {
+      "type": "json",
+      "keys": [
+        "answer",
+        "reason"
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "question": "In which year did World War II end?",
+    "reference": "1945",
+    "format": {
+      "type": "json",
+      "keys": [
+        "answer",
+        "reason"
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "question": "Which organ pumps blood through the human body?",
+    "reference": "heart",
+    "format": {
+      "type": "json",
+      "keys": [
+        "answer",
+        "reason"
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "question": "What is the currency of Japan?",
+    "reference": "yen",
+    "format": {
+      "type": "json",
+      "keys": [
+        "answer",
+        "reason"
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "question": "Explain why the sky appears blue.",
+    "reference": "Rayleigh|scattering",
+    "format": {
+      "type": "bullets",
+      "count": 3
+    }
+  },
+  {
+    "id": 12,
+    "question": "Describe the water cycle.",
+    "reference": "evaporation",
+    "format": {
+      "type": "bullets",
+      "count": 3
+    }
+  },
+  {
+    "id": 13,
+    "question": "Explain what machine learning is.",
+    "reference": "learn|data",
+    "format": {
+      "type": "bullets",
+      "count": 3
+    }
+  },
+  {
+    "id": 14,
+    "question": "Explain the benefits of version control such as Git.",
+    "reference": "Git",
+    "format": {
+      "type": "bullets",
+      "count": 3
+    }
+  },
+  {
+    "id": 15,
+    "question": "Explain what an API is.",
+    "reference": "interface",
+    "format": {
+      "type": "bullets",
+      "count": 3
+    }
+  },
+  {
+    "id": 16,
+    "question": "Describe how vaccines work.",
+    "reference": "immune",
+    "format": {
+      "type": "bullets",
+      "count": 3
+    }
+  },
+  {
+    "id": 17,
+    "question": "Explain why regular exercise is healthy.",
+    "reference": "heart|cardiovascular",
+    "format": {
+      "type": "bullets",
+      "count": 3
+    }
+  },
+  {
+    "id": 18,
+    "question": "Explain what caused the French Revolution.",
+    "reference": "tax|taxes",
+    "format": {
+      "type": "bullets",
+      "count": 3
+    }
+  },
+  {
+    "id": 19,
+    "question": "Explain what photosynthesis produces.",
+    "reference": "oxygen|glucose",
+    "format": {
+      "type": "bullets",
+      "count": 3
+    }
+  },
+  {
+    "id": 20,
+    "question": "Explain how binary search works.",
+    "reference": "half|middle|divide",
+    "format": {
+      "type": "bullets",
+      "count": 3
+    }
+  },
+  {
+    "id": 21,
+    "question": "What causes ocean tides?",
+    "reference": "moon|gravity",
+    "format": {
+      "type": "one_sentence"
+    }
+  },
+  {
+    "id": 22,
+    "question": "What is DNS used for?",
+    "reference": "domain|IP address|IP",
+    "format": {
+      "type": "one_sentence"
+    }
+  },
+  {
+    "id": 23,
+    "question": "What is inflation?",
+    "reference": "prices|price",
+    "format": {
+      "type": "one_sentence"
+    }
+  },
+  {
+    "id": 24,
+    "question": "Why is the ocean salty?",
+    "reference": "rivers|rocks|minerals",
+    "format": {
+      "type": "one_sentence"
+    }
+  },
+  {
+    "id": 25,
+    "question": "What is a black hole?",
+    "reference": "gravity",
+    "format": {
+      "type": "one_sentence"
+    }
+  },
+  {
+    "id": 26,
+    "question": "What does a CPU do?",
+    "reference": "instructions|processing|execute",
+    "format": {
+      "type": "one_sentence"
+    }
+  },
+  {
+    "id": 27,
+    "question": "What is the Pythagorean theorem about?",
+    "reference": "right triangle|right angled|hypotenuse",
+    "format": {
+      "type": "one_sentence"
+    }
+  },
+  {
+    "id": 28,
+    "question": "What is overfitting in machine learning?",
+    "reference": "training data|noise",
+    "format": {
+      "type": "one_sentence"
+    }
+  },
+  {
+    "id": 29,
+    "question": "Who developed the theory of general relativity?",
+    "reference": "Einstein",
+    "format": {
+      "type": "one_sentence"
+    }
+  },
+  {
+    "id": 30,
+    "question": "What is the boiling point of water at sea level in Celsius?",
+    "reference": "100",
+    "format": {
+      "type": "one_sentence"
+    }
+  },
+  {
+    "id": 31,
+    "question": "Who painted the Mona Lisa?",
+    "reference": "Leonardo|da Vinci",
+    "format": {
+      "type": "max_words",
+      "limit": 20
+    }
+  },
+  {
+    "id": 32,
+    "question": "What is the capital of Canada?",
+    "reference": "Ottawa",
+    "format": {
+      "type": "max_words",
+      "limit": 20
+    }
+  },
+  {
+    "id": 33,
+    "question": "What is the largest ocean on Earth?",
+    "reference": "Pacific",
+    "format": {
+      "type": "max_words",
+      "limit": 20
+    }
+  },
+  {
+    "id": 34,
+    "question": "Who discovered penicillin?",
+    "reference": "Fleming",
+    "format": {
+      "type": "max_words",
+      "limit": 20
+    }
+  },
+  {
+    "id": 35,
+    "question": "What is the square root of 144?",
+    "reference": "12",
+    "format": {
+      "type": "max_words",
+      "limit": 20
+    }
+  },
+  {
+    "id": 36,
+    "question": "Which planet is known as the Red Planet?",
+    "reference": "Mars",
+    "format": {
+      "type": "max_words",
+      "limit": 20
+    }
+  },
+  {
+    "id": 37,
+    "question": "What is the chemical formula of table salt?",
+    "reference": "NaCl",
+    "format": {
+      "type": "max_words",
+      "limit": 20
+    }
+  },
+  {
+    "id": 38,
+    "question": "Who was the first person to walk on the Moon?",
+    "reference": "Armstrong",
+    "format": {
+      "type": "max_words",
+      "limit": 20
+    }
+  },
+  {
+    "id": 39,
+    "question": "What is the longest river in Africa?",
+    "reference": "Nile",
+    "format": {
+      "type": "max_words",
+      "limit": 20
+    }
+  },
+  {
+    "id": 40,
+    "question": "What is the freezing point of water in Fahrenheit?",
+    "reference": "32",
+    "format": {
+      "type": "max_words",
+      "limit": 20
+    }
+  },
+  {
+    "id": 41,
+    "question": "What is 15 multiplied by 12?",
+    "reference": "180",
+    "format": {
+      "type": "number_only"
+    }
+  },
+  {
+    "id": 42,
+    "question": "How many continents are there?",
+    "reference": "7",
+    "format": {
+      "type": "number_only"
+    }
+  },
+  {
+    "id": 43,
+    "question": "How many days are there in a leap year?",
+    "reference": "366",
+    "format": {
+      "type": "number_only"
+    }
+  },
+  {
+    "id": 44,
+    "question": "What is 144 divided by 12?",
+    "reference": "12",
+    "format": {
+      "type": "number_only"
+    }
+  },
+  {
+    "id": 45,
+    "question": "How many sides does a hexagon have?",
+    "reference": "6",
+    "format": {
+      "type": "number_only"
+    }
+  },
+  {
+    "id": 46,
+    "question": "How many bits are in a byte?",
+    "reference": "8",
+    "format": {
+      "type": "number_only"
+    }
+  },
+  {
+    "id": 47,
+    "question": "What is 2 to the power of 10?",
+    "reference": "1024",
+    "format": {
+      "type": "number_only"
+    }
+  },
+  {
+    "id": 48,
+    "question": "How many minutes are there in 3 hours?",
+    "reference": "180",
+    "format": {
+      "type": "number_only"
+    }
+  },
+  {
+    "id": 49,
+    "question": "What is the atomic number of carbon?",
+    "reference": "6",
+    "format": {
+      "type": "number_only"
+    }
+  },
+  {
+    "id": 50,
+    "question": "How many players does one soccer team have on the field?",
+    "reference": "11",
+    "format": {
+      "type": "number_only"
+    }
+  }
+]

@@ -1,0 +1,11 @@
+openai
+pandas
+numpy
+scipy
+scikit-learn
+python-dotenv
+tqdm
+jsonschema
+rapidfuzz
+matplotlib
+tabulate

@@ -1,0 +1,48 @@
+{
+  "n_samples": 20,
+  "exact_agreement": 0.7,
+  "within_1_agreement": 0.85,
+  "mean_abs_error": 0.45,
+  "judge_bias (judge_mean - manual_mean)": 0.45,
+  "spearman_rho": null,
+  "spearman_p": null,
+  "cohen_kappa": 0.0,
+  "cohen_kappa_quadratic_weighted": 0.0,
+  "confusion_matrix_rows_manual_cols_judge_1to5": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      3
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      3
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      14
+    ]
+  ]
+}
